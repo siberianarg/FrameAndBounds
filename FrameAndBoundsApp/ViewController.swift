@@ -38,10 +38,32 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        frameX.text = "frame x"
     }
-    class ViewController: UIViewController {
+    
+    @IBAction func frameXSliderChanged(sender: AnyObject) {
+        myView.frame.origin.x = CGFloat(frameXSlider.value)
+        updateLabels()
+    }
+    
+    @IBAction func frameYSliderChanged(sender: AnyObject) {
+        myView.frame.origin.y = CGFloat(frameYSlider.value)
+        updateLabels()
+    }
+    
+    private func updateLabels() {
         
+        frameX.text = "frame x = \(Int(myView.frame.origin.x))"
+        frameY.text = "frame y = \(Int(myView.frame.origin.y))"
+        frameWidth.text = "frame width = \(Int(myView.frame.width))"
+        frameHeight.text = "frame height = \(Int(myView.frame.height))"
+        boundsX.text = "bounds x = \(Int(myView.bounds.origin.x))"
+        boundsY.text = "bounds y = \(Int(myView.bounds.origin.y))"
+        boundsWidth.text = "bounds width = \(Int(myView.bounds.width))"
+        boundsHeight.text = "bounds height = \(Int(myView.bounds.height))"
+        centerX.text = "center x = \(Int(myView.center.x))"
+        centerY.text = "center y = \(Int(myView.center.y))"
+        rotation.text = "rotation = \((rotationSlider.value))"
         
     }
+    
 }
