@@ -22,6 +22,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcB-h7-uTQ">
                                         <rect key="frame" x="77.666666666666686" y="0.0" width="200" height="250"/>
                                         <color key="backgroundColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.17254901959999999" green="0.20000000000000001" blue="0.85160620629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="HXY-fN-RVu"/>
                                             <constraint firstAttribute="width" constant="200" id="cyv-WA-CUI"/>
@@ -262,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.2463768115942031" y="3.3482142857142856"/>
+            <point key="canvasLocation" x="-8.8000000000000007" y="2.9556650246305418"/>
         </scene>
     </scenes>
     <resources>

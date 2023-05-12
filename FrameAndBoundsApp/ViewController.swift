@@ -51,42 +51,42 @@ class ViewController: UIViewController {
     }
     
     @IBAction func frameWidthSliderChanged(sender: AnyObject) {
-           myView.frame.size.width = CGFloat(frameWidthSlider.value)
-           updateLabels()
-       }
-       @IBAction func frameHeightSliderChanged(sender: AnyObject) {
-           myView.frame.size.height = CGFloat(frameHeightSlider.value)
-           updateLabels()
-       }
-       @IBAction func boundsXSliderChanged(sender: AnyObject) {
-           myView.bounds.origin.x = CGFloat(boundsXSlider.value)
-          updateLabels()
-       }
-       @IBAction func boundsYSliderChanged(sender: AnyObject) {
-           myView.bounds.origin.y = CGFloat(boundsYSlider.value)
-           updateLabels()
-       }
-       @IBAction func boundsWidthSliderChanged(sender: AnyObject) {
-           myView.bounds.size.width = CGFloat(boundsWidthSlider.value)
-           updateLabels()
-       }
-       @IBAction func boundsHeightSliderChanged(sender: AnyObject) {
-           myView.bounds.size.height = CGFloat(boundsHeightSlider.value)
-           updateLabels()
-       }
-       @IBAction func centerXSliderChanged(sender: AnyObject) {
-           myView.center.x = CGFloat(centerXSlider.value)
-           updateLabels()
-       }
-       @IBAction func centerYSliderChanged(sender: AnyObject) {
-           myView.center.y = CGFloat(centerYSlider.value)
-           updateLabels()
-       }
-       @IBAction func rotationSliderChanged(sender: AnyObject) {
-           let rotation = CGAffineTransform(rotationAngle: CGFloat(rotationSlider.value))
-           myView.transform = rotation
-           updateLabels()
-       }
+        myView.frame.size.width = CGFloat(frameWidthSlider.value)
+        updateLabels()
+    }
+    @IBAction func frameHeightSliderChanged(sender: AnyObject) {
+        myView.frame.size.height = CGFloat(frameHeightSlider.value)
+        updateLabels()
+    }
+    @IBAction func boundsXSliderChanged(sender: AnyObject) {
+        myView.bounds.origin.x = CGFloat(boundsXSlider.value)
+        updateLabels()
+    }
+    @IBAction func boundsYSliderChanged(sender: AnyObject) {
+        myView.bounds.origin.y = CGFloat(boundsYSlider.value)
+        updateLabels()
+    }
+    @IBAction func boundsWidthSliderChanged(sender: AnyObject) {
+        myView.bounds.size.width = CGFloat(boundsWidthSlider.value)
+        updateLabels()
+    }
+    @IBAction func boundsHeightSliderChanged(sender: AnyObject) {
+        myView.bounds.size.height = CGFloat(boundsHeightSlider.value)
+        updateLabels()
+    }
+    @IBAction func centerXSliderChanged(sender: AnyObject) {
+        myView.center.x = CGFloat(centerXSlider.value)
+        updateLabels()
+    }
+    @IBAction func centerYSliderChanged(sender: AnyObject) {
+        myView.center.y = CGFloat(centerYSlider.value)
+        updateLabels()
+    }
+    @IBAction func rotationSliderChanged(sender: AnyObject) {
+        let rotation = CGAffineTransform(rotationAngle: CGFloat(rotationSlider.value))
+        myView.transform = rotation
+        updateLabels()
+    }
     
     private func updateLabels() {
         
