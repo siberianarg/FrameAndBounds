@@ -38,6 +38,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myView.translatesAutoresizingMaskIntoConstraints = true //
+//        
+//        let constraint = myView.heightAnchor.constraint(equalToConstant: 100)
+//        constraint.isActive = true
     }
     
     @IBAction func frameXSliderChanged(sender: AnyObject) {
